@@ -15,7 +15,7 @@ function App() {
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4"}}>
         <Link to="/" style={{color: "white", fontSize: 35}}>
-        <img src='../images/decorativelilyalt.JPG' height="35" width="100" style={{marginBottom: -5}}/> DecorativeLily
+        <img src='../images/decorativelilyalt.JPG' alt="Decorativelily Logo" height="35" width="100" style={{marginBottom: -5}}/> DecorativeLily
         </Link>
       </header>
       <main>
