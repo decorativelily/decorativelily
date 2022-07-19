@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 function GalleryScreen() {
     return (
@@ -16,4 +16,4 @@ function GalleryScreen() {
     )
 }
 
-export default GalleryScreen
+export default GalleryScreen*/

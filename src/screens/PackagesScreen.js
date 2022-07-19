@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 function PackagesScreen() {
     return (
@@ -20,4 +20,4 @@ function PackagesScreen() {
     )
 }
 
-export default PackagesScreen
+export default PackagesScreen*/

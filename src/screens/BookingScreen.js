@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 function BookingScreen() {
   return (
@@ -43,4 +43,4 @@ function BookingScreen() {
   )
 }
 
-export default BookingScreen
+export default BookingScreen*/
