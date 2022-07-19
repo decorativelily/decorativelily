@@ -4,7 +4,7 @@ function HomeScreen() {
     return (
     <div>
       <div style={{marginTop: 35, textAlign: "center"}}>
-        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="300" width="1000" />
+        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="auto" width="100%" />
       </div>
         <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
             Picnic Booking Request
