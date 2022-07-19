@@ -3,8 +3,8 @@ import React from 'react'
 function HomeScreen() {
     return (
     <div>
-      <div style={{marginTop: 35}}>
-        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="800" width="100%" />
+      <div style={{marginTop: 35, textAlign: "center"}}>
+        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="500" width="1500" />
       </div>
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
           
