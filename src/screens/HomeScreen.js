@@ -41,7 +41,7 @@ function HomeScreen() {
         </ul>
       </div>
       <div style={{marginTop: 35}}>
-      <img src='/images/decorativelilyalt.JPG' height="800" width="100%" />
+      <img src='/images/decorativelilyalt.JPG' alt="Decorativelily" height="800" width="100%" />
       </div>
     <div className="row center" style={{flex: "row", marginTop: 50}}>
         <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
