@@ -1,6 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function HomeScreen() {
+    const [balloon, setBalloon]=useState(true);
+    const [charcuterieBoard, setCharcuterieBoard]=useState(true);
+
+    const handleChange=(data)=>{
+        if(data=="balloon")
+        {
+            if(balloon==true){
+                console.log(data, "balloon")
+            }
+            setBalloon(!balloon)
+        }
+        if(data=="charcuterieBoard")
+        {
+            if(charcuterieBoard==true){
+                console.log(data, "charcuterieBoard")
+            }
+            setCharcuterieBoard(!charcuterieBoard)
+        }
+    }
     return (
     <div>
       <div style={{marginTop: 35, textAlign: "center"}}>
@@ -37,6 +56,14 @@ function HomeScreen() {
                 <input type="text" placeholder="Guest Count" name="guestCount" style={{color: "#ff69b4"}}/>
             </div>
             <div style={{textAlign: "center"}}>
+            <div>
+                <label>
+                    <input type="checkbox" name="balloon" value={balloon} onChange={()=>handleChange("balloon")}/>Balloons
+                </label>
+                <label>
+                    <input type="checkbox" name="charcuterieBoard" value={charcuterieBoard} onChange={()=>handleChange("charcuterieBoard")}/>Charcuterie Board
+                </label>
+            </div>
                 <textarea placeholder="Message" name="message" style={{color: "#ff69b4"}}></textarea>
             </div>
             <div style={{textAlign: "center"}}>
@@ -124,4 +151,7 @@ export default HomeScreen
         </div>
         </form>
       </div>
+*/
+
+/*
 */
