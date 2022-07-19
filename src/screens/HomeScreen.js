@@ -31,8 +31,8 @@ function HomeScreen() {
           <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: 200, width: 300}}></img>
           </div>
       </div>
-      <div>
-        <ReactPlayer url="https://www.youtube.com/shorts/L4hmH-tYhMc" height="500px" width="1000px" style={{ marginLeft: "25%", marginTop: 50}} />
+      <div style={{alignItems: "center"}}>
+        <ReactPlayer url="https://www.youtube.com/shorts/L4hmH-tYhMc" />
       </div>
       <div style={{textAlign: "center", color: "#ff69b4", marginTop: 50, fontSize: 50}}>
           Packages
