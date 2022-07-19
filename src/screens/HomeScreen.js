@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 function HomeScreen() {
-    const [balloon, setBalloon]=useState(true);
-    const [charcuterieBoard, setCharcuterieBoard]=useState(true);
+    const [balloon, setBalloon]=useState('');
+    const [charcuterieBoard, setCharcuterieBoard]=useState('');
 
     const handleChange=(data)=>{
         if(data==="balloon")
@@ -57,14 +57,16 @@ function HomeScreen() {
             </div>
             <div style={{textAlign: "center"}}>
             <div>
-                <label>
-                    <input type="checkbox" name="balloon" value={balloon} onChange={()=>handleChange("balloon")}/>Balloons
-                </label>
-                <label>
-                    <input type="checkbox" name="charcuterieBoard" value={charcuterieBoard} onChange={()=>handleChange("charcuterieBoard")}/>Charcuterie Board
-                </label>
-            </div>
-                <textarea placeholder="Message" name="message" style={{color: "#ff69b4"}}></textarea>
+                <label htmlFor="balloon">Balloons</label>
+                    <input type="checkbox" id="balloon" placeholder="balloon" name="balloon" value={balloon} onChange={(e)=> setBalloon(e.target.value)}/>
+                </div>
+                <div>
+                <label htmlFor="charcuterieBoard">Charcuterie Board</label>
+                    <input type="checkbox" id="charcuterieBoard" placeholder="charcuterieBoard" name="charcuterieBoard" value={charcuterieBoard} onChange={(e)=>setCharcuterieBoard(e.target.value)}/>
+                </div>
+                <div>
+                    <textarea placeholder="Message" name="message" style={{color: "#ff69b4"}}></textarea>
+                </div>
             </div>
             <div style={{textAlign: "center"}}>
                 <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
