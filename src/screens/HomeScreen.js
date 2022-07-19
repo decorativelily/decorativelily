@@ -22,8 +22,14 @@ function HomeScreen() {
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Phone Number" name="phoneNumber" style={{color: "#ff69b4"}}/>
             </div>
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Occassion" name="occassion" style={{color: "#ff69b4"}}/>
+            <div className="dropdown" style={{textAlign: "center"}}>
+                   <select name="occassion">
+                       <option name="">Occassion</option>
+                       <option name="occassion" value="anniversary">Anniversary</option>
+                       <option name="occassion" value="birthday">Birthday</option>
+                       <option name="occassion" value="graduation">Graduation</option>
+                       <option name="occassion" value="wedding">Wedding</option>
+                   </select>
             </div>
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Date" name="date" style={{color: "#ff69b4"}}/>
@@ -38,11 +44,11 @@ function HomeScreen() {
                 <input type="text" placeholder="Guest Count" name="guestCount" style={{color: "#ff69b4"}}/>
             </div>
             <div>
-                <label> Balloons
-                    <input type="checkbox" name="addOns" value="balloon"/>
+                <label>
+                    <input type="checkbox" name="addOns" value="balloon"/>Balloons
                 </label>
-                <label> Charcuterie Board
-                    <input type="checkbox" name="addOns" value="charcuterieBoard"/>
+                <label>
+                    <input type="checkbox" name="addOns" value="charcuterieBoard"/>Charcuterie Board
                 </label>
             </div>
             <div style={{textAlign: "center"}}>
@@ -56,8 +62,14 @@ function HomeScreen() {
             <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
                 <i style={{color: "#C13584", paddingRight: 15, fontSize: 25}} class="fa fa-facebook btn-round fa-lg"></i>
             </a>
+            <a href="https://www.twitter.com/decorativelily" class="btn social-icon button" data-abc="true">
+              <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-twitter btn-round fa-lg"></i>
+            </a>
             <a href="https://www.instagram.com/decorativelily" class="btn social-icon button" data-abc="true">
-                <i style={{color: "#C13584", fontSize: 25}} class="fa fa-instagram btn-round fa-lg"></i>
+                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-instagram btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/" class="btn social-icon button" data-abc="true">
+              <i style={{color: "#C13584", fontSize: 25}} class="fa fa-youtube btn-round fa-lg"></i>
             </a>
         </div>
       </div>
@@ -66,6 +78,12 @@ function HomeScreen() {
 }
 
 export default HomeScreen
+
+/*
+<div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Occassion" name="occassion" style={{color: "#ff69b4"}}/>
+            </div>
+*/
 
 /*
  <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>

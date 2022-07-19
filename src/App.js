@@ -14,8 +14,8 @@ function App() {
     <BrowserRouter>
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4"}}>
-        <Link className="brand" to="/" style={{color: "white"}}>
-          Decorativelily
+        <Link to="/" style={{color: "white", fontSize: 35}}>
+        <img src='../images/decorativelilyalt.JPG' height="35" width="100" style={{marginBottom: -5}}/> DecorativeLily
         </Link>
       </header>
       <main>
@@ -24,7 +24,7 @@ function App() {
         </Routes>
       </main>
       <footer className="row center" style={{marginBottom: -10, backgroundColor: "#ff69b4"}}>
-          <div style={{color: "white"}}>&#169; 2022 Decorativelily LLC. All Rights Reserved.</div>
+          <div style={{color: "white"}}>&#169; 2022 DecorativeLily LLC. All Rights Reserved.</div>
       </footer>
       </div>
     </BrowserRouter>
