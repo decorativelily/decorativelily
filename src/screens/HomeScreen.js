@@ -4,22 +4,7 @@ function HomeScreen() {
     return (
     <div>
       <div style={{marginTop: 35, textAlign: "center"}}>
-        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="500" width="1500" />
-      </div>
-      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
-          
-      </div>
-      <div style={{textAlign: "center"}}>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
-        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 500}}></img>
+        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="300" width="1000" />
       </div>
         <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
             Picnic Booking Request
@@ -95,6 +80,24 @@ export default HomeScreen
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
           FAQ
       </div>
+*/
+
+/*
+ <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4"}}>
+          Gallery
+</div>
+<div style={{textAlign: "center"}}>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+        <img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 200, width: 300}}></img>
+</div>
 */
 
 /*
