@@ -1,0 +1,31 @@
+import React from 'react'
+
+function ContactUsScreen() {
+  return (
+    <div>
+      <div style={{textAlign: "center"}}>
+        <h1>Contact Us</h1>
+      </div>
+      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
+        <input type="hidden" name="form-name" value="contact-form" />
+    <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Name" name="name" />
+    </div>
+    <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Email" name="email" />
+    </div>
+    <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Phone Number" name="phoneNumber" />
+    </div>
+    <div style={{textAlign: "center"}}>
+        <textarea placeholder="Message" name="message"></textarea>
+    </div>
+    <div style={{textAlign: "center"}}>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+  </div>
+  )
+}
+
+export default ContactUsScreen

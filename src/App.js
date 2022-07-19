@@ -1,76 +1,46 @@
 //import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import { BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import AboutScreen from './screens/AboutScreen';
+import BookingScreen from './screens/BookingScreen';
+import ContactUsScreen from './screens/ContactUsScreen';
+import FAQScreen from './screens/FAQScreen';
+import GalleryScreen from './screens/GalleryScreen';
+import HomeScreen from './screens/HomeScreen';
+import PackagesScreen from './screens/PackagesScreen';
 
 function App() {
   return (
-      <div className="App">
-      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-        <input type="hidden" name="form-name" value="contact-form" />
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Name" name="name" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Email" name="email" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Phone Number" name="phoneNumber" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Occassion" name="occassion" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Date" name="date" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Location" name="location" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Time" name="time" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <input type="text" placeholder="Guest Count" name="guestCount" />
-        </div>
-        <div style={{textAlign: "center"}}>
-          <textarea placeholder="Message" name="message"></textarea>
-        </div>
-        <div style={{textAlign: "center"}}>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+    <BrowserRouter>
+    <div className="grid-container">
+      <header className="row" style={{backgroundColor: "#ff69b4"}}>
+        <Link className="brand" to="/" style={{color: "white"}}>
+          Decorativelily
+        </Link>
+      </header>
+      <main>
+      <div>
+    </div>
+      <Routes>
+        <Route path="/about" element={<AboutScreen />}></Route>
+        <Route path="/booking" element={<BookingScreen />}></Route>
+        <Route path="/contact" element={<ContactUsScreen />}></Route>
+        <Route path="/faq" element={<FAQScreen />}></Route>
+        <Route path="/gallery" element={<GalleryScreen />}></Route>
+        <Route path="/packages" element={<PackagesScreen />}></Route>
+        <Route path="/" element={<HomeScreen />}></Route>
+      </Routes>
+      </main>
+      <footer className="row center" style={{marginBottom: -10, backgroundColor: "#ff69b4"}}>
+          <div style={{color: "white"}}>&#169; 2022 Decorativelily LLC. All Rights Reserved.</div>
+      </footer>
       </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
 
 /*
- <div style={{textAlign: "center", marginTop: 50}}>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-<img src="/images/decorativelily.JPG" alt="Picnic" style={{height: 300, width: 500}}></img>
-</div>
-*/
-
-/*
-<div className="row center" style={{flex: "row"}}>
-<a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
-<i style={{color: "#C13584"}} class="fa fa-facebook btn-round fa-lg"></i>
-</a>
-<a href="https://www.instagram.com/decorativelily" class="btn social-icon button" data-abc="true">
-<i style={{color: "#C13584"}} class="fa fa-instagram btn-round fa-lg"></i>
-</a>
-</div>
-*/
-
-/*
-<footer className="row center" style={{textAlign: "center", marginTop: 50}}>&#169; 2022 Decorativelily Inc. All rights reserved.</footer>
+<img src='/images/decorativelily.JPG' height="35" width="150" />
 */
