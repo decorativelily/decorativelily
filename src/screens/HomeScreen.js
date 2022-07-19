@@ -5,16 +5,16 @@ function HomeScreen() {
     const [charcuterieBoard, setCharcuterieBoard]=useState(true);
 
     const handleChange=(data)=>{
-        if(data=="balloon")
+        if(data==="balloon")
         {
-            if(balloon==true){
+            if(balloon===true){
                 console.log(data, "balloon")
             }
             setBalloon(!balloon)
         }
-        if(data=="charcuterieBoard")
+        if(data==="charcuterieBoard")
         {
-            if(charcuterieBoard==true){
+            if(charcuterieBoard===true){
                 console.log(data, "charcuterieBoard")
             }
             setCharcuterieBoard(!charcuterieBoard)
