@@ -1,25 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function HomeScreen() {
-    const [balloon, setBalloon]=useState('');
-    const [charcuterieBoard, setCharcuterieBoard]=useState('');
 
-    const handleChange=(data)=>{
-        if(data==="balloon")
-        {
-            if(balloon===true){
-                console.log(data, "balloon")
-            }
-            setBalloon(!balloon)
-        }
-        if(data==="charcuterieBoard")
-        {
-            if(charcuterieBoard===true){
-                console.log(data, "charcuterieBoard")
-            }
-            setCharcuterieBoard(!charcuterieBoard)
-        }
-    }
     return (
     <div>
       <div style={{marginTop: 35, textAlign: "center"}}>
@@ -55,18 +37,16 @@ function HomeScreen() {
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Guest Count" name="guestCount" style={{color: "#ff69b4"}}/>
             </div>
-            <div style={{textAlign: "center"}}>
             <div>
-                <label htmlFor="balloon">Balloons</label>
-                    <input type="checkbox" id="balloon" placeholder="balloon" name="balloon" value={balloon} onChange={(e)=> setBalloon(e.target.value)}/>
-                </div>
-                <div>
-                <label htmlFor="charcuterieBoard">Charcuterie Board</label>
-                    <input type="checkbox" id="charcuterieBoard" placeholder="charcuterieBoard" name="charcuterieBoard" value={charcuterieBoard} onChange={(e)=>setCharcuterieBoard(e.target.value)}/>
-                </div>
-                <div>
-                    <textarea placeholder="Message" name="message" style={{color: "#ff69b4"}}></textarea>
-                </div>
+                <label> Balloons
+                    <input type="checkbox" name="addOns" value="balloon"/>
+                </label>
+                <label> Charcuterie Board
+                    <input type="checkbox" name="addOns" value="charcuterieBoard"/>
+                </label>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <textarea placeholder="Message" name="message" style={{color: "#ff69b4"}}></textarea>
             </div>
             <div style={{textAlign: "center"}}>
                 <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
