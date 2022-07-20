@@ -158,8 +158,8 @@ function HomeScreen() {
                 <input type="text" placeholder="Phone Number" name="phoneNumber" style={{color: "#ff69b4"}} required/>
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="occassion" style={{color: "#ff69b4"}}>
-                       <option name="" required>Occassion</option>
+                   <select name="occassion" required="required" style={{color: "#ff69b4"}}>
+                       <option name="">Occassion</option>
                        <option name="occassion" value="anniversary" style={{color: "#ff69b4"}}>Anniversary</option>
                        <option name="occassion" value="birthday" style={{color: "#ff69b4"}}>Birthday</option>
                        <option name="occassion" value="graduation" style={{color: "#ff69b4"}}>Graduation</option>
@@ -176,8 +176,8 @@ function HomeScreen() {
                 <input type="text" placeholder="Time" name="time" style={{color: "#ff69b4"}} required/>
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="guestCount" style={{color: "#ff69b4"}}>
-                       <option name="" required>Guest Count</option>
+                   <select name="guestCount" required="required" style={{color: "#ff69b4"}}>
+                       <option name="">Guest Count</option>
                        <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
                        <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
                        <option name="guestCount" value="6" style={{color: "#ff69b4"}}>6</option>
