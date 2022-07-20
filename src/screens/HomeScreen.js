@@ -202,7 +202,7 @@ function HomeScreen() {
             </div>
         </form>
       </div>
-      <div class="row center">
+      <div class="row center" style={{marginTop: 35}}>
             <div class="container" style={{textAlign: "center"}}>
                   <div class="form-group">
                       <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
@@ -322,11 +322,5 @@ export default HomeScreen
 /*
  <div style={{alignItems: "center"}}>
         <ReactPlayer url="https://www.youtube.com/shorts/L4hmH-tYhMc" />
-      </div>
-*/
-
-/*
-<div style={{marginTop: 35, textAlign: "center"}}>
-        <img src='/images/decorativelily.JPG' alt="Decorativelily" height="auto" width="100%" />
       </div>
 */

@@ -14,7 +14,8 @@ function App() {
     <BrowserRouter>
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4", height:50}}>
-      <div style={{marginLeft: -5, marginBottom: 5}}>
+      <div>
+        <div style={{marginLeft: -4, marginBottom: 10}}>
       <button
               type="button"
               className="open-sidebar"
@@ -23,9 +24,12 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             </div>
-            <Link to="/" style={{color: "white", fontSize: 35}}>
-              DecorativeLily
+            <div style={{marginLeft: 40, marginTop: -50}}>
+            <Link className="brand" to="/" style={{fontSize: 35, color: "white"}}>
+              Decorativelily
             </Link>
+            </div>
+            </div>
       </header>
       <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul>
