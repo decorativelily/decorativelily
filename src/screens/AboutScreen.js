@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 
 function AboutScreen() {
     return (
@@ -8,4 +8,4 @@ function AboutScreen() {
     )
 }
 
-export default AboutScreen*/
+export default AboutScreen

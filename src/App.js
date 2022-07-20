@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 //import './App.css';
 import { BrowserRouter, Link, Route, Routes} from 'react-router-dom';
-//import AboutScreen from './screens/AboutScreen';
+import AboutScreen from './screens/AboutScreen';
 //import BookingScreen from './screens/BookingScreen';
 //import ContactUsScreen from './screens/ContactUsScreen';
 //import FAQScreen from './screens/FAQScreen';
@@ -15,11 +15,12 @@ function App() {
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4"}}>
         <Link to="/" style={{color: "white", fontSize: 35}}>
-        <img src='../images/decorativelilyalt.JPG' alt="Decorativelily Logo" height="35" width="100" style={{marginBottom: -5}}/> DecorativeLily
+        <img src='../images/decorativelilyalt.JPG' alt="Decorativelily Logo" height="35" width="75" style={{marginBottom: -5}}/> DecorativeLily
         </Link>
       </header>
       <main>
         <Routes>
+          <Route path="/about" element={<AboutScreen />}></Route>
           <Route path="/" element={<HomeScreen />}></Route>
         </Routes>
       </main>

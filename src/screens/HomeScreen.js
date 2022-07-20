@@ -6,7 +6,15 @@ import { Carousel } from 'react-responsive-carousel';
 function HomeScreen() {
 
     return (
-    <div style={{marginTop: 50}}>
+    <div>
+        <div class="row center" style={{justifyContent: "space-evenly"}}>
+        <ul>
+          <li class="tablinks" style={{padding: 2}}>
+            <a href="/about" style={{color: "#ff69b4"}}>About Us</a>
+          </li>
+        </ul>
+        </div>
+        <div style={{marginTop: 25}}>
       <Carousel autoPlay infiniteLoop interval={5000} showArrows showIndicators={false} showStatus={false} showThumbs={false} height="auto" width="100%">
       <div>
           <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: 300, width: "100%"}}/>
@@ -15,6 +23,7 @@ function HomeScreen() {
           <img src="/images/decorativelilyalt.JPG" alt="Decorativelily" style={{height: 300, width: "100%"}}/>
       </div> 
      </Carousel>
+     </div>
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
        Our Story
        <div style={{marginTop: 5, fontSize: 25}}>
