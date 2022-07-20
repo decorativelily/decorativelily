@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4", height:50}}>
-      <div style={{marginLeft: 0}}>
+      <div style={{marginLeft: -5, marginBottom: 5}}>
       <button
               type="button"
               className="open-sidebar"
@@ -23,9 +23,9 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             </div>
-            <div style={{color: "white", fontSize: 25}}>
-              Decorativelily
-            </div>
+            <Link to="/" style={{color: "white", fontSize: 35}}>
+              DecorativeLily
+            </Link>
       </header>
       <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul>
@@ -134,12 +134,6 @@ function App() {
 }
 
 export default App;
-
-/*
-<Link to="/" style={{color: "white", fontSize: 35}}>
-        DecorativeLily
-  </Link>
-*/
 
 /*
 <Routes>
