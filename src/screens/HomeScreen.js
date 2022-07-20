@@ -202,6 +202,26 @@ function HomeScreen() {
             </div>
         </form>
       </div>
+      <div class="row center">
+            <div class="container" style={{textAlign: "center"}}>
+                  <div class="form-group">
+                      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
+                      <input type="hidden" name="form-name" value="contact-form" />
+                      <div>
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="Enter Email Address For Newsletter"
+                      style={{width: 255}}
+                    />
+                    </div>
+                    <button type="submit" style={{}}>
+                    Sign Up
+                  </button>
+                  </form>
+                  </div>
+              </div>
+        </div>
       <div className="row center" style={{flex: "row", marginTop: 50}}>
             <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
                 <i style={{color: "#C13584", paddingRight: 15, fontSize: 25}} class="fa fa-facebook btn-round fa-lg"></i>
