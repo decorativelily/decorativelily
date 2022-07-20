@@ -7,13 +7,6 @@ function HomeScreen() {
 
     return (
     <div>
-        <div class="row center" style={{justifyContent: "space-evenly"}}>
-        <ul>
-          <li class="tablinks" style={{padding: 2}}>
-            <a href="/about" style={{color: "#ff69b4"}}>About Us</a>
-          </li>
-        </ul>
-        </div>
         <div style={{marginTop: 25}}>
       <Carousel autoPlay infiniteLoop interval={5000} showArrows showIndicators={false} showStatus={false} showThumbs={false} height="auto" width="100%">
       <div>
@@ -55,97 +48,97 @@ function HomeScreen() {
       </div>
       <div style={{textAlign: "center", color: "#ff69b4", marginTop: 50, fontSize: 35}}>
           FAQ 
-          <div style={{marginTop: 10, fontSize: 25}}>
-            How do I schedule a picnic?
+          <div style={{marginTop: 25, fontSize: 25}}>
+            Q: How do I schedule a picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          Please fill out a picnic booking request and we will contact you with 24-48 hours with further details.
+          A: Please fill out a picnic booking request and we will contact you with 24-48 hours with further details.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          How much does a picnic cost?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          The cost of a picnic depends on the package selected, number of guests, and add on items requested. Deposits are due at time of reservation with remaining amount paid 48 hours prior to scheduled date.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          What does my picnic include?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: How much does a picnic cost?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          All picnics include at least 1 table, table settings, table decorations, silverware, drinkware, napkins, pillows for seating, throw rugs, teepee, and umbrella. Add-ons are available for an extra fee.
+          A: The cost of a picnic depends on the package selected, number of guests, and add on items requested. Deposits are due at time of reservation with remaining amount paid 48 hours prior to scheduled date.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          What if I need to cancel my picnic?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          Refunds are issued if a notice of cancellation is provided at least a week in advance minus the deposit fee. If cancellation due to bad weather, picnic can be relocated to indoor location or rescheduled for a future date.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          Where can I have a picnic?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: What does my picnic include?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          Picnic locations include homes, lakes, parks, etc. throughout the () areas that do not require permits or other additonal fees.
+          A: All picnics include at least 1 table, table settings, table decorations, silverware, drinkware, napkins, pillows for seating, throw rugs, teepee, and umbrella. Add-ons are available for an extra fee.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          How long is a picnic?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          Picnics are slotted for 2 hours with the option to extend for an additonal fee.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          How far in advance do I need to schedule picnic?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: What if I need to cancel my picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          ASAP. Dates and times are filling quickly.
+          A: Refunds are issued if a notice of cancellation is provided at least a week in advance minus the deposit fee. If cancellation due to bad weather, picnic can be relocated to indoor location or rescheduled for a future date.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          Why a Decorativelily picnic?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          Special occassions do not happen every day and we can help provide memorable experiences.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          Is alcohol allowed?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: Where can I have a picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          We do not provide alcohol or assume any responsibility for violations.
+          A: Picnic locations include homes, lakes, parks, etc. throughout the () areas that do not require permits or other additonal fees.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          Do I need to cleanup after picnic?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          No. We will take care of the setup and cleanup process. All you need to do is show up.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          Do you provide food/drinks for picnic?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: How long is a picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          You are more than welcome to bring your own foods and drinks. For an additional fee you can request a chacuterie board, dessert board, and/or fruit tray.
+          A: Picnics are slotted for 2 hours with the option to extend for an additonal fee.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          How do I pay for picnic?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          We will be in contact with you regarding deposit of $75 due at time of reservation as well as with remaining amount including refundable security deposit due 48 hours before schedule date.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          What if I damage picnic item(s)?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: How far in advance do I need to schedule picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          We expect items to be maintained in same condition as delivered with extra fees being charged for any damaged items.
+          A: ASAP. Dates and times are filling quickly.
           </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          What areas of DFW do you service?
-          </div>
-          <div style={{marginTop: 5, fontSize: 25}}>
-          We service the following areas of DFW: Argyle, Bedford, Colleyville, Euless, Flower Mound, Grapevine, Haltom, Justin, Keller, North Richland Hills, Roanoke, Saginaw, Southlake, and Watauga. We also serve surrounding areas for an extra charge.
-          </div>
-          <div style={{marginTop: 10, fontSize: 25}}>
-          What if I finish picnic early?
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: Why a Decorativelily picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          A 30 minute notification is required so we can return to reassume responsibility for items.
+          A: Special occassions do not happen every day and we can help provide memorable experiences.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: Is alcohol allowed?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
+          A: We do not provide alcohol or assume any responsibility for violations.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: Do I need to cleanup after picnic?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: No. We will take care of the setup and cleanup process. All you need to do is show up.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: Do you provide food/drinks for picnic?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: You are more than welcome to bring your own foods and drinks. For an additional fee you can request a chacuterie board, dessert board, and/or fruit tray.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: How do I pay for picnic?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: We will be in contact with you regarding deposit of $75 due at time of reservation as well as with remaining amount including refundable security deposit due 48 hours before schedule date.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: What if I damage picnic item(s)?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: We expect items to be maintained in same condition as delivered with extra fees being charged for any damaged items.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: What areas of DFW do you service?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: We service the following areas of DFW: Argyle, Bedford, Colleyville, Euless, Flower Mound, Grapevine, Haltom, Justin, Keller, North Richland Hills, Roanoke, Saginaw, Southlake, and Watauga. We also serve surrounding areas for an extra charge.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
+          Q: What if I finish picnic early?
+          </div>
+          <div style={{marginTop: 5, fontSize: 25}}>
+          A: A 30 minute notification is required so we can return to reassume responsibility for items.
+          </div>
+          <div style={{marginTop: 25, fontSize: 25}}>
               If you have any other questions please email us at decorativelily@gmail.com
           </div>
       </div>
@@ -208,7 +201,8 @@ function HomeScreen() {
                 <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
             </div>
         </form>
-        <div className="row center" style={{flex: "row", marginTop: 50}}>
+      </div>
+      <div className="row center" style={{flex: "row", marginTop: 50}}>
             <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
                 <i style={{color: "#C13584", paddingRight: 15, fontSize: 25}} class="fa fa-facebook btn-round fa-lg"></i>
             </a>
@@ -231,7 +225,6 @@ function HomeScreen() {
                 <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-pinterest btn-round fa-lg"></i>
             </a>
         </div>
-      </div>
       </div>
     )
 }

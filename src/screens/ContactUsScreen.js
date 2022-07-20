@@ -1,10 +1,10 @@
-/*import React from 'react'
+import React from 'react'
 
 function ContactUsScreen() {
   return (
     <div>
-      <div style={{textAlign: "center"}}>
-        <h1>Contact Us</h1>
+      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
+        Contact Us
       </div>
       <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
         <input type="hidden" name="form-name" value="contact-form" />
@@ -28,4 +28,4 @@ function ContactUsScreen() {
   )
 }
 
-export default ContactUsScreen*/
+export default ContactUsScreen
