@@ -175,8 +175,8 @@ function HomeScreen() {
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Time" name="time" style={{color: "#ff69b4"}} required/>
             </div>
-            <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="guestCount" style={{color: "#ff69b4"}}>
+            <div className="dropdown" style={{textAlign: "center"}} required>
+                   <select name="guestCount" style={{color: "#ff69b4"}} required>
                        <option name="" required>Guest Count</option>
                        <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
                        <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
@@ -186,7 +186,7 @@ function HomeScreen() {
                        <option name="guestCount" value="12" style={{color: "#ff69b4"}}>12</option>
                    </select>
             </div>
-            <div>
+            <div style={{textAlign: "center", color: "#ff69b4"}}> Add Ons (Optional)
                 <label style={{color: "#ff69b4"}}>
                     <input type="checkbox" name="addOns" value="balloon"/>Balloons
                 </label>
