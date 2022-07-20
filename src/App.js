@@ -13,7 +13,8 @@ function App() {
   return (
     <BrowserRouter>
     <div className="grid-container">
-      <header className="row" style={{backgroundColor: "#ff69b4"}}>
+      <header className="row" style={{backgroundColor: "#ff69b4", height:50}}>
+      <div style={{marginLeft: 0}}>
       <button
               type="button"
               className="open-sidebar"
@@ -21,11 +22,10 @@ function App() {
             >
               <i className="fa fa-bars"></i>
             </button>
-        <div style={{marginRight: "42%"}}>
-        <Link to="/" style={{color: "white", fontSize: 35 }}>
-        <img src='../images/decorativelilyalt.JPG' alt="Decorativelily Logo" height="35" width="75" style={{marginBottom: -5}}/> DecorativeLily
-        </Link>
-        </div>
+            </div>
+            <div style={{color: "white", fontSize: 25}}>
+              Decorativelily
+            </div>
       </header>
       <aside className={sidebarIsOpen ? 'open' : ''}>
           <ul>
@@ -136,7 +136,9 @@ function App() {
 export default App;
 
 /*
-<img src='/images/decorativelily.JPG' height="35" width="150" />
+<Link to="/" style={{color: "white", fontSize: 35}}>
+        DecorativeLily
+  </Link>
 */
 
 /*
