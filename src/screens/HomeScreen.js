@@ -2,7 +2,6 @@ import React from 'react';
 //import ReactPlayer from 'react-player'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import { Link } from 'react-router-dom';
 
 function HomeScreen() {
 
