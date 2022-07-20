@@ -44,10 +44,10 @@ function BookingScreen() {
                    </select>
             </div>
             <div>
-                <label style={{color: "#ff69b4"}}>
+                <label style={{color: "#ff69b4", fontSize: 15}}>
                     <input type="checkbox" name="addOns" value="balloon"/>Balloons
                 </label>
-                <label style={{color: "#ff69b4"}}>
+                <label style={{color: "#ff69b4", fontSize: 15}}>
                     <input type="checkbox" name="addOns" value="charcuterieBoard"/>Charcuterie Board
                 </label>
             </div>

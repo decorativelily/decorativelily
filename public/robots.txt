@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+Sitemap: http://www.decorativelily.com/robots.txt
 User-agent: *
 Disallow:
+
