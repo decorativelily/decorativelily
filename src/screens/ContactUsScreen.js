@@ -20,8 +20,8 @@ function ContactUsScreen() {
     <div style={{textAlign: "center"}}>
         <textarea placeholder="Message" name="message"></textarea>
     </div>
-    <div style={{textAlign: "center", color: "#ff69b4"}}>
-        <button type="submit">Submit</button>
+    <div style={{textAlign: "center"}}>
+        <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
     </div>
     </form>
   </div>
