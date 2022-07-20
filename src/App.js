@@ -7,6 +7,7 @@ import FAQScreen from './screens/FAQScreen';
 import GalleryScreen from './screens/GalleryScreen';
 import HomeScreen from './screens/HomeScreen';
 import PackagesScreen from './screens/PackagesScreen';
+import SupportScreen from './screens/SupportScreen';
 
 function App() {
   return (
@@ -54,6 +55,11 @@ function App() {
             <a href="/contact" style={{color: "#ff69b4"}}>Contact Us</a>
           </li>
         </ul>
+        <ul>
+          <li class="tablinks" style={{padding: 2}}>
+            <a href="/support" style={{color: "#ff69b4"}}>Support</a>
+          </li>
+        </ul>
         </div>
         <Routes>
           <Route path="/about" element={<AboutScreen />}></Route>
@@ -62,6 +68,7 @@ function App() {
           <Route path="/gallery" element={<GalleryScreen />}></Route>
           <Route path="/booking" element={<BookingScreen />}></Route>
           <Route path="/package" element={<PackagesScreen />}></Route>
+          <Route path="/support" element={<SupportScreen />}></Route>
           <Route path="/" element={<HomeScreen />}></Route>
         </Routes>
       </main>
