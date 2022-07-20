@@ -176,7 +176,7 @@ function HomeScreen() {
                 <input type="text" placeholder="Time" name="time" style={{color: "#ff69b4"}} required/>
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="guestCount" style={{color: "#ff69b4"}}>
+                   <select name="guestCount" style={{color: "#ff69b4"}} required>
                        <option name="">Guest Count</option>
                        <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
                        <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>

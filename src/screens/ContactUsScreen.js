@@ -9,13 +9,13 @@ function ContactUsScreen() {
       <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
         <input type="hidden" name="form-name" value="contact-form" />
     <div style={{textAlign: "center"}}>
-        <input type="text" placeholder="Name" name="name" />
+        <input type="text" placeholder="Name" name="name" required/>
     </div>
     <div style={{textAlign: "center"}}>
-        <input type="text" placeholder="Email" name="email" />
+        <input type="text" placeholder="Email" name="email" required/>
     </div>
     <div style={{textAlign: "center"}}>
-        <input type="text" placeholder="Phone Number" name="phoneNumber" />
+        <input type="text" placeholder="Phone Number" name="phoneNumber" required/>
     </div>
     <div style={{textAlign: "center"}}>
         <textarea placeholder="Message" name="message"></textarea>
