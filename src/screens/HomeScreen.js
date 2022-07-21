@@ -211,12 +211,12 @@ function HomeScreen() {
                     <input
                       type="text"
                       name="email"
-                      placeholder="Enter Email Address For Newsletter"
-                      style={{width: 255}}
+                      placeholder="Sign Up For Newsletter"
+                      style={{width: 165}}
                     />
                     </div>
                     <button type="submit" style={{color: "#ff69b4"}}>
-                    Sign Up
+                    Submit
                   </button>
                   </form>
                   </div>
