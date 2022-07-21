@@ -215,7 +215,7 @@ function HomeScreen() {
                       style={{width: 255}}
                     />
                     </div>
-                    <button type="submit" style={{}}>
+                    <button type="submit" style={{color: "#ff69b4"}}>
                     Sign Up
                   </button>
                   </form>
