@@ -38,6 +38,7 @@ function App() {
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"
                 type="button"
+                style={{color: "#ff69b4"}}
               >
                 <i className="fa fa-close"></i>
               </button>

@@ -16,7 +16,7 @@ function BookingScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="occassion" style={{color: "#ff69b4"}}>
-                       <option name="">Occassion</option>
+                       <option name="" value="" disabled="disabled">Occassion</option>
                        <option name="occassion" value="anniversary" style={{color: "#ff69b4"}}>Anniversary</option>
                        <option name="occassion" value="birthday" style={{color: "#ff69b4"}}>Birthday</option>
                        <option name="occassion" value="graduation" style={{color: "#ff69b4"}}>Graduation</option>
@@ -34,7 +34,7 @@ function BookingScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="guestCount" style={{color: "#ff69b4"}}>
-                       <option name="">Guest Count</option>
+                       <option name="" value="" disabled="disabled">Guest Count</option>
                        <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
                        <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
                        <option name="guestCount" value="6" style={{color: "#ff69b4"}}>6</option>
@@ -50,6 +50,9 @@ function BookingScreen() {
                 <label style={{color: "#ff69b4", fontSize: 15}}>
                     <input type="checkbox" name="addOns" value="charcuterieBoard"/>Charcuterie Board
                 </label>
+            </div>
+            <div style={{textAlign: "center", color: "#ff69b4"}}>
+                <input type="file" name="file" placeholder="Upload File" />
             </div>
             <div style={{textAlign: "center"}}>
                 <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>

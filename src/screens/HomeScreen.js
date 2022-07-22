@@ -18,7 +18,7 @@ function HomeScreen() {
      </Carousel>
      </div>
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
-       Our Story
+       About
        <div style={{marginTop: 5, fontSize: 25}}>
            DecorativeLily was created in 2022 after one of my son's became engaged. He requested my help in finding special ways to propose to his beautiful girlfriend at an out of state beach. Since I knew my hands were tied with not being able to take any of my handmade products on the plane, we had to look for event planners to help us plan it and thats when we came across a family owned company who set up picnics at the beach. With their help, we were able to make his proposal extra special. It was such a beautiful picture perfect setting and I knew that I wanted to do something similar here in the DFW area to help people plan out their memorable moments. My love of entertaining, crafting, sewing, and recently new woodworking hobby, came to play by me making my own products from picnic tables, sewing pillow covers, signs, etc. There was no question that this was a great business idea for me as I would love to help make great memories for my customers.
        </div>
@@ -45,6 +45,72 @@ function HomeScreen() {
           <div style={{textAlign: "center", color: "#ff69b4", fontSize: 25, marginTop: 10}}>
             Picnic For 9-12
           </div>
+      </div>
+      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
+            Picnic Booking Request
+        </div>
+        <div>
+            <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
+                <input type="hidden" name="form-name" value="contact-form" />
+            <div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Name" name="name" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Email" name="email" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Phone Number" name="phoneNumber" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div className="dropdown" style={{textAlign: "center"}}>
+                   <select name="occassion" style={{color: "#ff69b4"}}>
+                       <option name="" value="">Occassion</option>
+                       <option name="occassion" value="anniversary" style={{color: "#ff69b4"}}>Anniversary</option>
+                       <option name="occassion" value="birthday" style={{color: "#ff69b4"}}>Birthday</option>
+                       <option name="occassion" value="graduation" style={{color: "#ff69b4"}}>Graduation</option>
+                       <option name="occassion" value="wedding" style={{color: "#ff69b4"}}>Wedding</option>
+                   </select>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <input type="date" placeholder="Date" name="date" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Location" name="location" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <input type="text" placeholder="Time" name="time" style={{color: "#ff69b4"}} required/>
+            </div>
+            <div className="dropdown" style={{textAlign: "center"}}>
+                   <select name="guestCount" style={{color: "#ff69b4"}}>
+                       <option name="" value="">Guest Count</option>
+                       <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
+                       <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
+                       <option name="guestCount" value="6" style={{color: "#ff69b4"}}>6</option>
+                       <option name="guestCount" value="8" style={{color: "#ff69b4"}}>8</option>
+                       <option name="guestCount" value="10" style={{color: "#ff69b4"}}>10</option>
+                       <option name="guestCount" value="12" style={{color: "#ff69b4"}}>12</option>
+                   </select>
+            </div>
+            <div style={{textAlign: "center", color: "#ff69b4"}}> Add Ons (Optional)
+                <label style={{color: "#ff69b4"}}>
+                    <input type="checkbox" name="addOns" value="balloon"/>Balloons
+                </label>
+                <label style={{color: "#ff69b4"}}>
+                    <input type="checkbox" name="addOns" value="charcuterieBoard"/>Charcuterie Board
+                </label>
+            </div>
+            <div style={{textAlign: "center", color: "#ff69b4"}}>
+                <input type="file" name="file" placeholder="Upload File" />
+            </div>
+            <div style={{textAlign: "center"}}>
+                <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>
+            </div>
+            <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
+            </div>
+        </form>
       </div>
       <div style={{textAlign: "center", color: "#ff69b4", marginTop: 50, fontSize: 35}}>
           FAQ 
@@ -142,65 +208,28 @@ function HomeScreen() {
               If you have any other questions please email us at decorativelily@gmail.com
           </div>
       </div>
-        <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
-            Picnic Booking Request
-        </div>
-        <div>
-            <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-                <input type="hidden" name="form-name" value="contact-form" />
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Name" name="name" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Email" name="email" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Phone Number" name="phoneNumber" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="occassion" style={{color: "#ff69b4"}}>
-                       <option name="">Occassion</option>
-                       <option name="occassion" value="anniversary" style={{color: "#ff69b4"}}>Anniversary</option>
-                       <option name="occassion" value="birthday" style={{color: "#ff69b4"}}>Birthday</option>
-                       <option name="occassion" value="graduation" style={{color: "#ff69b4"}}>Graduation</option>
-                       <option name="occassion" value="wedding" style={{color: "#ff69b4"}}>Wedding</option>
-                   </select>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <input type="date" placeholder="Date" name="date" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Location" name="location" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <input type="text" placeholder="Time" name="time" style={{color: "#ff69b4"}} required/>
-            </div>
-            <div className="dropdown" style={{textAlign: "center"}}>
-                   <select name="guestCount" style={{color: "#ff69b4"}}>
-                       <option name="">Guest Count</option>
-                       <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
-                       <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
-                       <option name="guestCount" value="6" style={{color: "#ff69b4"}}>6</option>
-                       <option name="guestCount" value="8" style={{color: "#ff69b4"}}>8</option>
-                       <option name="guestCount" value="10" style={{color: "#ff69b4"}}>10</option>
-                       <option name="guestCount" value="12" style={{color: "#ff69b4"}}>12</option>
-                   </select>
-            </div>
-            <div style={{textAlign: "center", color: "#ff69b4"}}> Add Ons (Optional)
-                <label style={{color: "#ff69b4"}}>
-                    <input type="checkbox" name="addOns" value="balloon"/>Balloons
-                </label>
-                <label style={{color: "#ff69b4"}}>
-                    <input type="checkbox" name="addOns" value="charcuterieBoard"/>Charcuterie Board
-                </label>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>
-            </div>
-            <div style={{textAlign: "center"}}>
-                <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
-            </div>
-        </form>
+      <div>
+      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
+        Contact Us
+      </div>
+      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
+        <input type="hidden" name="form-name" value="contact-form" />
+      <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Name" name="name" required/>
+      </div>
+      <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Email" name="email" required/>
+      </div>
+      <div style={{textAlign: "center"}}>
+        <input type="text" placeholder="Phone Number" name="phoneNumber" required/>
+      </div>
+      <div style={{textAlign: "center"}}>
+        <textarea placeholder="Message" name="message"></textarea>
+      </div>
+      <div style={{textAlign: "center"}}>
+        <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
+      </div>
+      </form>
       </div>
       <div class="row center" style={{marginTop: 35}}>
             <div class="container" style={{textAlign: "center"}}>

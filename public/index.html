@@ -29,6 +29,12 @@
     -->
     <title>Decorativelily</title>
     <style>
+      :-ms-input-placeholder {
+        color:#ff69b4;
+      }
+      ::placeholder {
+        color:#ff69b4;
+      }
     </style>
     </head>
     <body>
@@ -56,6 +62,8 @@
       <input type="checkbox" name="addOns" value="balloon" />
       <input type="checkbox" name="addOns" value="charcuterieBoard" />
       <textarea name="message"></textarea>
+      <input type="file" name="file" />
+      <div data-netlify-recaptcha="true"></div>
     </form>
     <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden>
       <input type="text" name="name" color="pink"/>
