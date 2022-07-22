@@ -104,8 +104,7 @@ function HomeScreen() {
             <div style={{textAlign: "center"}}>
                 <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>
             </div>
-            <div class="field">
-                <div data-netlify-recaptcha="true"></div>
+            <div data-netlify-recaptcha="true">
             </div>
             <div style={{textAlign: "center"}}>
                 <button type="submit" style={{color: "#ff69b4"}}>Submit</button>

@@ -38,7 +38,7 @@
     </style>
     </head>
     <body>
-    <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden>
+    <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden data-netlify-recaptcha="true">
       <input type="text" name="name" />
       <input type="text" name="email" />
       <input type="text" name="phoneNumber" />
@@ -63,7 +63,6 @@
       <input type="checkbox" name="addOns" value="charcuterieBoard" />
       <input type="file" name="file" value="file"/>
       <textarea name="message"></textarea>
-      <div data-netlify-recaptcha="true"></div>
     </form>
     <form name="contact-form" netlify netlify-honeypot="bot-field" action="/" hidden>
       <input type="text" name="name" color="pink"/>
