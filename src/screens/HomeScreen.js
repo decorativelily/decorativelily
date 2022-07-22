@@ -50,7 +50,7 @@ function HomeScreen() {
             Picnic Booking Request
         </div>
         <div>
-            <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
+            <form className="form" name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" style={{}}>
                 <input type="hidden" name="form-name" value="contact-form" />
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Name" name="name" style={{color: "#ff69b4"}} required/>
@@ -104,8 +104,7 @@ function HomeScreen() {
             <div style={{textAlign: "center"}}>
                 <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>
             </div>
-            <div data-netlify-recaptcha="true">
-            </div>
+            <div data-netlify-recaptcha="true"></div>
             <div style={{textAlign: "center"}}>
                 <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
             </div>
