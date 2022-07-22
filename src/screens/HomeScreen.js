@@ -272,6 +272,20 @@ function HomeScreen() {
                 <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-pinterest btn-round fa-lg"></i>
             </a>
         </div>
+        <div>
+            <section>
+                <button>
+                <a href="tel:8179753597" style={{color: "#ff69b4"}}>
+                    Call
+                </a>
+                </button>
+                <button>
+                <a href="sms:8179753597" style={{color: "#ff69b4"}}>
+                    Text
+                </a>
+                </button>
+            </section>
+        </div>
       </div>
     )
 }
