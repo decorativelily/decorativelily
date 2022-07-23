@@ -121,6 +121,11 @@ function App() {
             <a href="/contact" style={{color: "#ff69b4"}}>Contact Us</a>
           </li>
         </ul>
+        <ul>
+          <li class="tablinks" style={{padding: 2}}>
+            <a href="/chat" style={{color: "#ff69b4"}}>Support</a>
+          </li>
+        </ul>
         </div>
         <Routes>
           <Route path="/about" element={<AboutScreen />}></Route>
