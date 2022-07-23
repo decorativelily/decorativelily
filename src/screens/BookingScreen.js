@@ -3,8 +3,8 @@ import React from 'react'
 function BookingScreen() {
   return (
     <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}> Book A Picnic
-     <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-                <input type="hidden" name="form-name" value="contact-form" />
+     <form className="form" name="booking" method="POST" data-netlify="true" style={{}}>
+                <input type="hidden" name="form-name" value="booking" />
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Name" name="name" style={{color: "#ff69b4"}} required/>
             </div>
