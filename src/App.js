@@ -145,6 +145,8 @@ function App() {
           </li>
         </ul>
         <section>
+          <ChatRoom />
+          <SignOut />
           {user ? <ChatRoom /> : <SignIn />}
         </section>
         </div>
