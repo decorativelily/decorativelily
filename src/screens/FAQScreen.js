@@ -45,7 +45,7 @@ function FAQScreen() {
           Q: How far in advance do I need to schedule picnic?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          A: ASAP. Dates and times are filling quickly.
+          A: ASAP. Dates and times are filling up quickly.
           </div>
           <div style={{marginTop: 25, fontSize: 25}}>
           Q: Why a Decorativelily picnic?
