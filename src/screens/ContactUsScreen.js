@@ -24,6 +24,20 @@ function ContactUsScreen() {
         <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
     </div>
     </form>
+    <div style={{textAlign: "center"}}>
+            <section>
+                <button>
+                <a href="tel:8179753597" style={{color: "#ff69b4"}}>
+                    Call
+                </a>
+                </button>
+                <button>
+                <a href="sms:8179753597" style={{color: "#ff69b4"}}>
+                    Text
+                </a>
+                </button>
+            </section>
+        </div>
   </div>
   )
 }

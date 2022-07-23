@@ -87,7 +87,7 @@ function FAQScreen() {
           Q: What areas of DFW do you service?
           </div>
           <div style={{marginTop: 5, fontSize: 25}}>
-          A: We service the following areas of DFW: Argyle, Bedford, Colleyville, Euless, Flower Mound, Grapevine, Haltom, Justin, Keller, North Richland Hills, Roanoke, Saginaw, Southlake, and Watauga. We also serve surrounding areas for an extra charge.
+          A: We service the following areas of DFW: Argyle, Bedford, Colleyville, Euless, Flower Mound, Grapevine, Haltom, Justin, Keller, North Richland Hills, Roanoke, Saginaw, Southlake, Trophy Club, and Watauga. We also serve surrounding areas for an extra charge.
           </div>
           <div style={{marginTop: 25, fontSize: 25}}>
           Q: What if I finish picnic early?

@@ -46,7 +46,7 @@ function App() {
           </ul>
           <div>
             <ul>
-              <li style={{marginTop: -35}}>
+              <li style={{}}>
                 <a href="/" style={{color: "#ff69b4"}}>Home</a>
               </li>
             </ul>
