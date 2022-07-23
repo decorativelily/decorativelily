@@ -99,7 +99,7 @@ function HomeScreen() {
                 </label>
             </div>
             <div style={{textAlign: "center", color: "#ff69b4"}}>
-                <input type="file" name="file" id="file" placeholder="Upload File" />
+                <input type="file" name="filename" id="myFile" placeholder="Upload File" />
             </div>
             <div style={{textAlign: "center"}}>
                 <textarea placeholder="Message (Optional)" name="message" style={{color: "#ff69b4"}}></textarea>
