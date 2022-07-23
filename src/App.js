@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react';
+import './App.css';
 import { BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import AboutScreen from './screens/AboutScreen';
 import BookingScreen from './screens/BookingScreen';
@@ -166,18 +167,22 @@ function App() {
 }
 
 function SignIn() {
+
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
 
 return (
-  <button onClick={signInWithGoogle}>Sign in with Google</button>
+  <>
+    <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
+    <p>Do not violate the community guidelines or you will be banned for life!</p>
+  </>
 )
 
 function SignOut() {
   return auth.currentUser && (
-    <button onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
 
@@ -191,7 +196,6 @@ function ChatRoom() {
   const [formValue, setFormValue] = useState('');
 
   const sendMessage = async(e) => {
-
     e.preventDefault();
 
     const { uid, photoURL } = auth.currentUser;
@@ -204,7 +208,6 @@ function ChatRoom() {
     });
 
     setFormValue('');
-
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -227,7 +230,7 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL} />
+      <img src={photoURL} alt="Decorativelily" />
        <p>{text}</p>
     </div>
   )
