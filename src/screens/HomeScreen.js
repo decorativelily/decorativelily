@@ -50,8 +50,8 @@ function HomeScreen() {
             Picnic Booking Request
         </div>
         <div>
-            <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-                <input type="hidden" name="form-name" value="contact-form" />
+            <form className="form" name="booking" method="POST" data-netlify="true" style={{}}>
+                <input type="hidden" name="form-name" value="booking" />
             <div style={{textAlign: "center"}}>
                 <input type="text" placeholder="Name" name="name" style={{color: "#ff69b4"}} required/>
             </div>
@@ -210,8 +210,8 @@ function HomeScreen() {
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
         Contact Us
       </div>
-      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-        <input type="hidden" name="form-name" value="contact-form" />
+      <form className="form" name="contact" method="POST" data-netlify="true" style={{}}>
+        <input type="hidden" name="form-name" value="contact" />
       <div style={{textAlign: "center"}}>
         <input type="text" placeholder="Name" name="name" required/>
       </div>
@@ -232,8 +232,8 @@ function HomeScreen() {
       <div class="row center" style={{marginTop: 35}}>
             <div class="container" style={{textAlign: "center"}}>
                   <div class="form-group">
-                      <form className="form" name="contact-form" method="POST" data-netlify="true" style={{}}>
-                      <input type="hidden" name="form-name" value="contact-form" />
+                      <form className="form" name="newsletter" method="POST" data-netlify="true" style={{}}>
+                      <input type="hidden" name="form-name" value="newsletter" />
                       <div>
                     <input
                       type="text"
