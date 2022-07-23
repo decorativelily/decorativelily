@@ -18,6 +18,7 @@ import 'firebase/compat/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import ChatRoom from './screens/ChatRoom'
+import SignOut from './screens/SignOut'
 
 firebase.initializeApp({
   apiKey: "AIzaSyD6DLDaethiiWD6U8IvWzT1--PUFrogvp8",
