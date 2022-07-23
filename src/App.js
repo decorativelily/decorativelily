@@ -8,6 +8,7 @@ import FAQScreen from './screens/FAQScreen';
 import GalleryScreen from './screens/GalleryScreen';
 import HomeScreen from './screens/HomeScreen';
 import PackagesScreen from './screens/PackagesScreen';
+import ChatScreen from './screens/ChatScreen';
 
 function App() {
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
@@ -128,6 +129,7 @@ function App() {
           <Route path="/gallery" element={<GalleryScreen />}></Route>
           <Route path="/booking" element={<BookingScreen />}></Route>
           <Route path="/package" element={<PackagesScreen />}></Route>
+          <Route path="/chat" element={<ChatScreen />}></Route>
           <Route path="/" element={<HomeScreen />}></Route>
         </Routes>
       </main>
