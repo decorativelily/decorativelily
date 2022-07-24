@@ -18,7 +18,7 @@ function App() {
     <div className="grid-container">
       <header className="row" style={{backgroundColor: "#ff69b4", height:50}}>
       <div>
-        <div style={{marginLeft: -4, marginBottom: 10}}>
+        <div style={{marginLeft: -5, paddingTop: 5}}>
       <button
               type="button"
               className="open-sidebar"
@@ -27,9 +27,9 @@ function App() {
               <i className="fa fa-bars"></i>
             </button>
             </div>
-            <div style={{marginLeft: 40, marginTop: -50}}>
-            <Link className="brand" to="/" style={{fontSize: 35, color: "white"}}>
-              Decorativelily
+            <div style={{marginLeft: 30, marginTop: -46}}>
+            <Link className="brand" to="/">
+              <img src="/images/decorativelilylogo1.JPG" alt="Decorativelily" style={{height: 50, width: 300}}/>
             </Link>
             </div>
             </div>
