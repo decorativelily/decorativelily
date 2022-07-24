@@ -99,7 +99,7 @@ function ChatRoom() {
 
     </main>
 
-    <form onSubmit={sendMessage} style={{textAlign: "center"}} className="form" name="support" method="POST" data-netlify="true">
+    <form onSubmit={sendMessage} style={{textAlign: "center"}}>
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Enter Message" style={{color: "#ff69b4", textAlign: "center"}}/>
 

@@ -43,6 +43,19 @@ function BookingScreen() {
                        <option name="guestCount" value="12" style={{color: "#ff69b4"}}>12</option>
                    </select>
             </div>
+            <div className="dropdown" style={{textAlign: "center"}}>
+                   <select name="theme" style={{color: "#ff69b4"}}>
+                       <option name="" value="" disabled="disabled">Theme</option>
+                       <option name="theme" value="aqua" style={{color: "#ff69b4"}}>Aqua</option>
+                       <option name="theme" value="boho" style={{color: "#ff69b4"}}>Boho</option>
+                       <option name="theme" value="goldenYellow" style={{color: "#ff69b4"}}>Golden Yellow</option>
+                       <option name="theme" value="hotPink" style={{color: "#ff69b4"}}>Hot Pink</option>
+                       <option name="theme" value="peach" style={{color: "#ff69b4"}}>Peach</option>
+                       <option name="theme" value="mauve" style={{color: "#ff69b4"}}>Mauve</option>
+                       <option name="theme" value="red" style={{color: "#ff69b4"}}>Red</option>
+                       <option name="theme" value="sage" style={{color: "#ff69b4"}}>Sage</option>
+                   </select>
+            </div>
             <div>
                 <label style={{color: "#ff69b4", fontSize: 15}}>
                     <input type="checkbox" name="addOns" value="balloon"/>Balloons
