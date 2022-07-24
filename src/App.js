@@ -12,6 +12,7 @@ import ChatScreen from './screens/ChatScreen';
 
 function App() {
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false);
+
   return (
     <BrowserRouter>
     <div className="grid-container">

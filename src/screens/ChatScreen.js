@@ -29,8 +29,7 @@ function ChatScreen() {
   return (
     <div className="App">
       <header style={{color: "#ff69b4", textAlign: "center"}}>
-        <h1>Chat</h1>
-        <SignOut />
+        <h1>Support</h1>
       </header>
 
       <section>
@@ -56,6 +55,7 @@ function SignIn() {
   )
 
 }
+//https://decorativelily-llc.firebaseapp.com/__/auth/handler
 
 function SignOut() {
   return auth.currentUser && (
@@ -104,7 +104,9 @@ function ChatRoom() {
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Enter Message" style={{color: "#ff69b4", textAlign: "center"}}/>
 
       <button type="submit" disabled={!formValue} style={{color: "#ff69b4"}}>Submit</button>
-
+      <div style={{paddingTop: 10, textAlign: "center"}}>
+      <SignOut />
+      </div>
     </form>
   </>)
 }
