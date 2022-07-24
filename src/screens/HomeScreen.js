@@ -95,7 +95,7 @@ function HomeScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="theme" style={{color: "#ff69b4"}}>
-                       <option name="" value="" disabled="disabled">Theme</option>
+                       <option name="" value="">Theme</option>
                        <option name="theme" value="aqua" style={{color: "#ff69b4"}}>Aqua</option>
                        <option name="theme" value="boho" style={{color: "#ff69b4"}}>Boho</option>
                        <option name="theme" value="goldenYellow" style={{color: "#ff69b4"}}>Golden Yellow</option>

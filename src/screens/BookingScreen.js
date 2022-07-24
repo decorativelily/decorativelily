@@ -16,7 +16,7 @@ function BookingScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="occassion" style={{color: "#ff69b4"}}>
-                       <option name="" value="" disabled="disabled">Occassion</option>
+                       <option name="" value="">Occassion</option>
                        <option name="occassion" value="anniversary" style={{color: "#ff69b4"}}>Anniversary</option>
                        <option name="occassion" value="birthday" style={{color: "#ff69b4"}}>Birthday</option>
                        <option name="occassion" value="graduation" style={{color: "#ff69b4"}}>Graduation</option>
@@ -34,7 +34,7 @@ function BookingScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="guestCount" style={{color: "#ff69b4"}}>
-                       <option name="" value="" disabled="disabled">Guest Count</option>
+                       <option name="" value="">Guest Count</option>
                        <option name="guestCount" value="2" style={{color: "#ff69b4"}}>2</option>
                        <option name="guestCount" value="4" style={{color: "#ff69b4"}}>4</option>
                        <option name="guestCount" value="6" style={{color: "#ff69b4"}}>6</option>
@@ -45,7 +45,7 @@ function BookingScreen() {
             </div>
             <div className="dropdown" style={{textAlign: "center"}}>
                    <select name="theme" style={{color: "#ff69b4"}}>
-                       <option name="" value="" disabled="disabled">Theme</option>
+                       <option name="" value="">Theme</option>
                        <option name="theme" value="aqua" style={{color: "#ff69b4"}}>Aqua</option>
                        <option name="theme" value="boho" style={{color: "#ff69b4"}}>Boho</option>
                        <option name="theme" value="goldenYellow" style={{color: "#ff69b4"}}>Golden Yellow</option>
