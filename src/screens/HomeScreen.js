@@ -10,13 +10,13 @@ function HomeScreen() {
         <div style={{marginTop: 25}}>
       <Carousel autoPlay infiniteLoop interval={5000} showArrows showIndicators={false} showStatus={false} showThumbs={false} height="auto" width="100%">
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{width: "1500px", height: "300px", borderRadius: "50%", margin: "2px 5px"}}/>
+          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div>   
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{width: "1500px", height: "300px", borderRadius: "50%", margin: "2px 5px"}}/>
+          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div> 
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{width: "1500px", height: "300px", borderRadius: "50%", margin: "2px 5px"}}/>
+          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div> 
      </Carousel>
      </div>
