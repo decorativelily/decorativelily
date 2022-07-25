@@ -10,23 +10,65 @@ function HomeScreen() {
         <div style={{marginTop: 25}}>
       <Carousel autoPlay infiniteLoop interval={5000} showArrows showIndicators={false} showStatus={false} showThumbs={false} height="auto" width="100%">
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
+          <img src="/images/decorativelilyalt.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div>   
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
+          <img src="/images/decorativelilyalt.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div> 
       <div>
-          <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
+          <img src="/images/decorativelilyalt.JPG" alt="Decorativelily" style={{height: "auto", width: "100%"}}/>
       </div> 
      </Carousel>
      </div>
-      <div style={{textAlign: "center", marginTop: 15, color: "#ff69b4", fontSize: 35}}>
+     <div style={{textAlign: "center", color: "#ff69b4", fontSize: 35, marginTop: 175}}>
+      DecorativeLily is ready to help you plan your luxurious picture perfect picnic. Whether its a date night, anniversary, proposal, bridal party, birthday, or just a fun night with your girls! We know how special these events in our lives are so it would be a pleasure for us to create an elegant atmosphere for you to celebrate your special occassion with your loved ones.
+     </div>
+      <div className="row center" style={{flex: "row", marginTop: 315}}>
+            <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
+                <i style={{color: "#C13584", paddingRight: 15, fontSize: 25}} class="fa fa-facebook btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.twitter.com/decorativelily" class="btn social-icon button" data-abc="true">
+              <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-twitter btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/decorativelily" class="btn social-icon button" data-abc="true">
+                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-instagram btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.snapchat.com/add/decorativelily" class="btn social-icon button" data-abc="true">
+                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-snapchat btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UClslCAFh26m4yGcviIGgDhQ" class="btn social-icon button" data-abc="true">
+              <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-youtube btn-round fa-lg"></i>
+            </a>
+            <a href="https://www.tiktok.com/@decorativelily" class="" data-abc="">
+                <img src="/images/tiktok.JPG" alt="Decorativelily TikTok" style={{height: 25, paddingRight: 15}}/>
+            </a>
+            <a href="https://www.pinterest.com/decorativelily/" class="btn social-icon button" data-abc="true">
+                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-pinterest btn-round fa-lg"></i>
+            </a>
+        </div>
+      </div>
+    )
+}
+
+export default HomeScreen
+
+/*
+ <div style={{alignItems: "center"}}>
+        <ReactPlayer url="https://www.youtube.com/shorts/L4hmH-tYhMc" />
+      </div>
+*/
+
+/* About
+<div style={{textAlign: "center", marginTop: 15, color: "#ff69b4", fontSize: 35}}>
        About
        <div style={{marginTop: 5, fontSize: 25}}>
            DecorativeLily was created in 2022 after one of my son's became engaged. He requested my help in finding special ways to propose to his beautiful girlfriend at an out of state beach. Since I knew my hands were tied with not being able to take any of my handmade products on the plane, we had to look for event planners to help us plan it and thats when we came across a family owned company who set up picnics at the beach. With their help, we were able to make his proposal extra special. It was such a beautiful picture perfect setting and I knew that I wanted to do something similar here in the DFW area to help people plan out their memorable moments. My love of entertaining, crafting, sewing, and recently new woodworking hobby, came to play by me making my own products from picnic tables, sewing pillow covers, signs, etc. There was no question that this was a great business idea for me as I would love to help make great memories for my customers.
        </div>
       </div>
-      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
+*/
+
+/* Gallery
+ <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
           Gallery
       </div>
       <div style={{textAlign: "center", marginTop: 5}}>
@@ -49,7 +91,10 @@ function HomeScreen() {
             Picnic For 9-12
           </div>
       </div>
-      <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
+*/
+
+/* Picnic Booking Request
+ <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
             Picnic Booking Request
         </div>
         <div>
@@ -126,7 +171,10 @@ function HomeScreen() {
             </div>
         </form>
       </div>
-      <div style={{textAlign: "center", color: "#ff69b4", marginTop: 50, fontSize: 35}}>
+*/
+
+/*
+ <div style={{textAlign: "center", color: "#ff69b4", marginTop: 50, fontSize: 35}}>
           FAQ 
           <div style={{marginTop: 25, fontSize: 25}}>
             Q: How do I schedule a picnic?
@@ -222,7 +270,10 @@ function HomeScreen() {
               If you have any other questions please email us at decorativelily@gmail.com
           </div>
       </div>
-      <div>
+*/
+
+/* Contact Us
+ <div>
       <div style={{textAlign: "center", marginTop: 50, color: "#ff69b4", fontSize: 35}}>
         Contact Us
       </div>
@@ -244,8 +295,10 @@ function HomeScreen() {
         <button type="submit" style={{color: "#ff69b4"}}>Submit</button>
       </div>
       </form>
-      </div>
-      <div class="row center" style={{marginTop: 35}}>
+      </div>*/
+
+/* Newsletter
+<div class="row center" style={{marginTop: 35}}>
             <div class="container" style={{textAlign: "center"}}>
                   <div class="form-group">
                       <form className="form" name="newsletter" method="POST" data-netlify="true" style={{}}>
@@ -265,37 +318,4 @@ function HomeScreen() {
                   </div>
               </div>
         </div>
-      <div className="row center" style={{flex: "row", marginTop: 50}}>
-            <a href="https://www.facebook.com/decorativelily" class="btn social-icon button" data-abc="true">
-                <i style={{color: "#C13584", paddingRight: 15, fontSize: 25}} class="fa fa-facebook btn-round fa-lg"></i>
-            </a>
-            <a href="https://www.twitter.com/decorativelily" class="btn social-icon button" data-abc="true">
-              <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-twitter btn-round fa-lg"></i>
-            </a>
-            <a href="https://www.instagram.com/decorativelily" class="btn social-icon button" data-abc="true">
-                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-instagram btn-round fa-lg"></i>
-            </a>
-            <a href="https://www.snapchat.com/add/decorativelily" class="btn social-icon button" data-abc="true">
-                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-snapchat btn-round fa-lg"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UClslCAFh26m4yGcviIGgDhQ" class="btn social-icon button" data-abc="true">
-              <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-youtube btn-round fa-lg"></i>
-            </a>
-            <a href="https://www.tiktok.com/@decorativelily" class="" data-abc="">
-                <img src="/images/tiktok.JPG" alt="Decorativelily TikTok" style={{height: 25, paddingRight: 15}}/>
-            </a>
-            <a href="https://www.pinterest.com/decorativelily/" class="btn social-icon button" data-abc="true">
-                <i style={{color: "#C13584", fontSize: 25, paddingRight: 15}} class="fa fa-pinterest btn-round fa-lg"></i>
-            </a>
-        </div>
-      </div>
-    )
-}
-
-export default HomeScreen
-
-/*
- <div style={{alignItems: "center"}}>
-        <ReactPlayer url="https://www.youtube.com/shorts/L4hmH-tYhMc" />
-      </div>
 */

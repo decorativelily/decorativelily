@@ -29,7 +29,7 @@ function App() {
             </div>
             <div style={{marginLeft: 30, marginTop: -46}}>
             <Link className="brand" to="/">
-              <img src="/images/decorativelilylogo1.JPG" alt="Decorativelily" style={{height: 50, width: 300}}/>
+              <img src="/images/decorativelily.JPG" alt="Decorativelily" style={{height: 50, width: 300}}/>
             </Link>
             </div>
             </div>

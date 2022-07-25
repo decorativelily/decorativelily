@@ -55,7 +55,6 @@ function SignIn() {
   )
 
 }
-//https://decorativelily-llc.firebaseapp.com/__/auth/handler
 
 function SignOut() {
   return auth.currentUser && (
@@ -119,7 +118,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`} style={{color: "#ff69b4"}}>
-      <img src={photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"} alt="Decorativelily" style={{width: "40px", height: "40px", borderRadius: "50%", margin: "2px 5px" }}/>
+      <img src={photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"} alt="decorativelily.JPG" style={{width: "40px", height: "40px", borderRadius: "50%", margin: "2px 5px" }}/>
       <p>{text}</p>
     </div>
   </>)
