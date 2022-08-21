@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { deliverOrder, detailsOrder, payOrder } from '../actions/orderActions';
 import { useParams } from 'react-router-dom';
 import Axios from 'axios';
-import {PayPalButton} from 'react-paypal-button-v2';
+//import {PayPalButton} from 'react-paypal-button-v2';
 import { ORDER_DELIVER_RESET, ORDER_PAY_RESET } from '../constants/orderConstants';
 
 export default function OrderScreen(props) {
@@ -182,10 +182,10 @@ export default function OrderScreen(props) {
                                     <MessageBox variant="danger">{errorPay}</MessageBox>
                                 )}
                                 {loadingPay && <LoadingBox></LoadingBox>}
-                                <PayPalButton
+                                {/*<PayPalButton
                                     amount={order.totalPrice}
                                     onSuccess={successPaymentHandler}
-                                ></PayPalButton>
+                                ></PayPalButton>*/}
                                 </>
                             )}
                         </li>
