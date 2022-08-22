@@ -200,6 +200,7 @@ useEffect(() => {
               <Route path="/productlist/seller" element={<SellerRoute><ProductListScreen /></SellerRoute>} exact></Route>
               <Route path="/orderlist/seller" element={<SellerRoute><OrderListScreen /></SellerRoute>} exact></Route>
               <Route path="/dashboard" element={<AdminRoute><DashboardScreen /></AdminRoute>} />
+              <Route path="/support" element={<AdminRoute><SupportScreen /></AdminRoute>} />
               <Route path="/" element={<HomeScreen />} exact></Route>
               </Routes>
             </main>
@@ -214,8 +215,4 @@ export default App;
 
 /*
 <Route path="/map" element={<PrivateRoute><MapScreen /></PrivateRoute>} /> 
-*/
-
-/*
-<Route path="/support" element={<AdminRoute><SupportScreen /></AdminRoute>} />
 */
