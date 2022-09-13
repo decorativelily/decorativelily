@@ -6,15 +6,17 @@ import MessageBox from '../components/MessageBox';
 import { useNavigate } from 'react-router-dom';
 import { deliverOrder, detailsOrder, payOrder } from '../actions/orderActions';
 import { useParams } from 'react-router-dom';
-import Axios from 'axios';
-//import {PayPalButton} from 'react-paypal-button-v2';
+import axios from 'axios';
+import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
 import { ORDER_DELIVER_RESET, ORDER_PAY_RESET } from '../constants/orderConstants';
+import { toast } from 'react-toastify';
+import { getError } from '../utils';
 
 export default function OrderScreen(props) {
     const navigate = useNavigate();
     const params = useParams();
     const { id: orderId } = params;
-    const [sdkReady, setSdkReady] = useState(false);
+    const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
     const orderDetails = useSelector((state) => state.orderDetails);
     const { order, loading, error } = orderDetails;
     const userSignin = useSelector((state) => state.userSignin);
@@ -33,36 +35,69 @@ export default function OrderScreen(props) {
         success: successDeliver, 
     } = orderDeliver;
     const dispatch = useDispatch();
+
+    function createOrder(data, actions) {
+        return actions.order
+          .create({
+            purchase_units: [
+              {
+                amount: { value: order.totalPrice },
+              },
+            ],
+          })
+          .then((orderID) => {
+            return orderID;
+          });
+      }
+    
+      function onApprove(data, actions) {
+        return actions.order.capture().then(async function (details) {
+          try {
+            dispatch({ type: 'PAY_REQUEST' });
+            const { data } = await axios.put(
+              `/api/orders/${order._id}/pay`,
+              details,
+              {
+                headers: { authorization: `Bearer ${userInfo.token}` },
+              }
+            );
+            dispatch({ type: 'PAY_SUCCESS', payload: data });
+            toast.success('Order is paid');
+          } catch (err) {
+            dispatch({ type: 'PAY_FAIL', payload: getError(err) });
+            toast.error(getError(err));
+          }
+        });
+      }
+      function onError(err) {
+        toast.error(getError(err));
+      }
+
     useEffect(() => {
-        const addPayPalScript = async () => {
-            const { data } = await Axios.get('/api/config/paypal')
-            const script = document.createElement('script');
-            script.type="text/javascript";
-            script.src=`https://www.paypal.com/sdk/js?client-id=${data}`;
-            script.async = true;
-            script.onload = () => {
-                setSdkReady(true);
-            };
-            document.body.appendChild(script);
-        };
         if (!order || successPay || successDeliver || (order && order._id !== orderId)) {
             dispatch({ type: ORDER_PAY_RESET });
             dispatch({ type: ORDER_DELIVER_RESET });
             dispatch(detailsOrder(orderId));
         } else {
             if (!order.isPaid) {
-                if (!window.paypal) {
-                    addPayPalScript();
-                } else {
-                    setSdkReady(true);
-                }
+                const loadPaypalScript = async () => {
+                    const { data: clientId } = await axios.get('/api/keys/paypal', {
+                      headers: { authorization: `Bearer ${userInfo.token}` },
+                    });
+                    paypalDispatch({
+                      type: 'resetOptions',
+                      value: {
+                        'client-id': clientId,
+                        currency: 'USD',
+                      },
+                    });
+                    paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });
+                  };
+                  loadPaypalScript();
             }
         }
-    }, [dispatch, order, orderId, sdkReady]);
+    }, [dispatch, order, orderId, paypalDispatch]);
 
-    const successPaymentHandler = (paymentResult) => {
-        dispatch(payOrder(order, paymentResult));
-    };
     const deliverHandler = () => {
         dispatch(deliverOrder(order._id));
     };
@@ -103,7 +138,7 @@ export default function OrderScreen(props) {
                                 </p>
                                 {order.isPaid ? (
                                 <MessageBox variant="success">
-                                    Delivered at {order.paidAt}
+                                    Paid at {order.paidAt}
                                 </MessageBox>
                                 ) : (
                                     <MessageBox variant="danger">Not Paid</MessageBox>
@@ -174,7 +209,7 @@ export default function OrderScreen(props) {
                 </li>
                 {!order.isPaid && (
                         <li>
-                            {!sdkReady ? (
+                             {isPending ? (
                             <LoadingBox></LoadingBox>
                             ) : (
                                 <>
@@ -182,10 +217,11 @@ export default function OrderScreen(props) {
                                     <MessageBox variant="danger">{errorPay}</MessageBox>
                                 )}
                                 {loadingPay && <LoadingBox></LoadingBox>}
-                                {/*<PayPalButton
-                                    amount={order.totalPrice}
-                                    onSuccess={successPaymentHandler}
-                                ></PayPalButton>*/}
+                                <PayPalButtons
+                                    createOrder={createOrder}
+                                    onApprove={onApprove}
+                                    onError={onError}
+                                ></PayPalButtons>
                                 </>
                             )}
                         </li>
