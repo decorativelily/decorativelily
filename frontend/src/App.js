@@ -205,7 +205,7 @@ useEffect(() => {
               </Routes>
             </main>
             {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
-            <footer className="row center" style={{color: "white"}}>&#169; 2022 Decorativelily LLC. All rights reserved.</footer>
+            <footer className="row center" style={{color: "white"}}>&#169; 2022 Decorativelily. All rights reserved.</footer>
         </div>
         </BrowserRouter>
   );

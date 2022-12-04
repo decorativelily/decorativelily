@@ -3,13 +3,13 @@ import bcrypt from 'bcryptjs';
 const data = {
     users: [
         {
-            name: 'Lily',
+            name: 'Lily Castaneda',
             email: 'decorativelily@gmail.com',
             password: bcrypt.hashSync('Decorativelily#1', 8),
             isAdmin: true,
         },
         {
-            name: 'Dominique',
+            name: 'Dominique Castaneda',
             email: 'dominiquemcastaneda@yahoo.com',
             password: bcrypt.hashSync('DominiqueCastaneda#1', 8),
             isAdmin: false,
