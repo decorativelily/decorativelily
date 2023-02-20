@@ -15,8 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://decorativelily:decorativelily@decorativelily.zqhw6fo.mongodb.net/test', {
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/decorativelily');
+//mongoose.connect(process.env.MONGODB_URL || , {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://decorativelily:decorativelily@decorativelily.zqhw6fo.mongodb.net/test'); //mongodb://localhost/decorativelily
     //useNewUrlParser: true,
     //useUnifiedTopology: true,
     //useCreateIndex: true,
